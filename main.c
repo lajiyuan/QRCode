@@ -204,7 +204,7 @@ int FindIndex(char c) {
 
 // 得到数值num所对应的len长度的二进制编码
 char *GetLenBinString(int num, int len) {
-    char *rtn = (char *) malloc(len);
+    char *rtn = (char *) malloc(len + 1);
     rtn[len] = '\0';
     int idx = len - 1;
     while (idx >= 0) {
